@@ -6,57 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="author" content="Gabriel Sanchez">
+    <meta name="description" content="Hello, this page is about the basic of HTML!">
+
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="Message-512.webp">
-    <title>Formato texto</title>
+    <title>HTML Basics</title>
 </head>
 
 <body>
     <h1>
-        Formato texto
+        HTML Basics
     </h1>
 
-    <p title="Nuevo parrafo">
-        
-        <a href="#div">Go to centered div</a>
-        <br>
+    <hr>
+    <!--Navigation element, to list navigation links-->
+    <nav>
+        <ul>
+            <li><a href="#text-basics">Text</a></li>
+            <li><a href="#adress-html">Adresses</a></li>
+            <li><a href="#lists-html">Lists</a></li>
+            <li><a href="#links-html">Links</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h2 id="text-basics">
+        Text Basics
+    </h2>
+    <hr>
+    <p>
         <!--Bold text-->
-        <b>Nuevo parrafo</b> <br>
+        <code>
+            &lt;b&gt; Everything inside these tags will be <b>bold</b> &lt;/b&gt;
+        </code><br><br>
         <!--Important text-->
-        <strong>Texto importante</strong><br>
+        <code>
+            &lt;strong&gt; <strong>Everything inside these will be considered as important or relevant</strong> &lt;/strong&gt;
+        </code><br><br>
         <!--Italic-->
-        <i>Texto en italica</i><br>
+        <code>
+            &lt;i&gt; <i>Everything inside these tags will be italicised</i> &lt;/i&gt; 
+        </code><br><br>
         <!--Emphazied text-->
-        <em>Texto enfatizado</em><br>
+        <code>
+            &lt;em&gt; <em>Everything inside these tags will be emphazied</em> &lt;/em&gt;
+        </code><br><br>
         <!--Small text-->
-        <small>Texto pequenno</small><br>
+        <code>
+            &lt;small&gt; <small>Everything inside these tags will be smaller</small> &lt;/small&gt;
+        </code><br><br>
         <!--Highlighted text-->
-        <mark>Texto marcado</mark><br>
+        <code>
+            &lt;mark&gt;<mark>Everything inside these tags will be highlighted</mark>&lt;/mark&gt;
+        </code><br><br>
         <!--Crossed text-->
-        <del>Texto eliminado</del><br>
+        <code>
+            &lt;del&gt; <del>Everything in these tags will be crossed out</del> &lt;/del&gt;
+        </code><br><br>
         <!--Underlined text-->
-        <ins>Texto insertado</ins><br>
+        <code>
+            &lt;ins&gt; <ins>Everything in these will be underlined</ins> &lt;/ins&gt;
+        </code><br><br>
         <!--Sub index-->
-        Subindice <sub>sub</sub><br>
+        <code>
+            &lt;sub&gt; Everything in these tags will be a <sub>subindex</sub> &lt;/sub&gt;
+        </code><br><br>
         <!--Super index-->
-        Superindice <sup>super</sup><br>
+        <code>
+            &lt;sup&gt; Everything in these tags will be a <sup>superindex</sup> &lt;/sup&gt;
+        </code><br><br>
         <!--Abreviaciones-->
-        <abbr title="Gabriel Sanchez Olveira">GSO</abbr>
+        <code>
+            &lt;abbr&gt; Text in these tags are abreviations, just like: <abbr title="Gabriel Sanchez Olveira">GSO</abbr> <br>
+            Use a title="" tag to make the meaning pop-up when hovered &lt;/abbr&gt;
+        </code><br><br>
+        <!--<pre> is written just as you put it-->
+        <code>
+                &lt;pre&gt; <pre>Text inside these tags 
+                    will respect given format
+                </pre> &lt;/pre&gt;
+        </code>
         <hr>
-    <h2>
+
+    <h2 id="links-html">
+        Links
+    </h2>
+    <hr>
+
+    <p>
+        Anker elements are used to link other webpages, other html files, sections on the same webpage and more. <br>
+        HTML Tag: <br> <br>
+        <code>
+            <a href=""></a>
+            &lt;a href="" target="_blank" <br>
+            download=""&gt; Write here link's text &lt;/a&gt; 
+        </code><br><br>
+    <h4>
+        Atributes
+    </h4>
+    <ul>
+        <li><code>href=""</code> , inside tihis attribute you'll write were the link takes you, ex: <br>
+            <code>-&lt;a href="https://www.google.com"&gt;<a href="https://www.google.com" target="_blank">Google</a>&lt;/a&gt;</code>
+        </li>
+        <li><code>target=""</code> , inside this one, you can add "_blank" to open the link in a new tab, ex: <br>
+            <code>-&lt;a href="https://www.google.com" target="_blank"&gt;<a href="https://www.google.com" target="_blank">Google</a>&lt;/a&gt;</code>
+        </li>
+        <li><code>download=""</code> , you can leave this attribute empty, it'll download it when you click the link,
+            ex: <br>
+            <code>-&lt;a href="img.png" download&gt;<a href="Message-512.webp" download="">Download</a>&lt;/a&gt;</code>
+        </li>
+        <li>
+            <code>href="mailto:"</code> , like this you can make a link that sends an email to the specified mail,
+            although it's not used anymore <br>
+            due to web-crawlers, ex: <br>
+            <code>-&lt;a href="mailto:gso2090@gmail.com"&gt;<a href="mailto:gso2090@gmail.com">Mail me</a>&lt;/a&gt;</code>
+        </li>
+        <li>
+            <code>href="tel:"</code> , like this you can also dial a specified phone number when the link is clicked,
+            ex: <br>
+            <code>-&lt;a href="tel:+12312341234"&gt;<a href="tel:+50683693617">Call me</a>&lt;/a&gt;</code>
+        </li>
+    </ul>
+    </p>
+
+    <hr>
+    <h2 id="adress-html">
         Address
     </h2>
-    <!--Tells the browser it's an address, italic my default-->
+    <hr>
+    <code>
+        &lt;address&gt <br>
+    </code>
     <address>
-        Lorem lorem lorem lorem lorem
-        lorem <br>
-        Lorem lorem lorem lorem lorem
-        lorem <br>
+        This HTML tag is used for addresses. <br>
+        It's italic by default and used to tell the browser <br>
+        that it's an address. <br>
     </address>
+    <code>
+        &lt;/address&gt;
+    </code>
+    <!--Tells the browser it's an address, italic my default-->
     </p>
 
     <hr>
 
-    <h2>
+    <h2 id="lists-html">
         Lists
     </h2>
 
@@ -106,19 +200,30 @@
             Description for the other term.
         </dd>
     </dl>
-    
+
     <hr>
-    
-    <div id="div" style="text-align:center;border:5px solid;border-radius:10px;">
-        <p>
-            Centered div
-        </p>
-        <img src="Message-512.webp" alt="idklol" title="fuck you" width="100px">
-    </div>
-    
-
-
-    <a href="#">Back to top</a>
+    &lt; &lt; &lt; &copy; <a href="about.html" target="_blank">Gabriel Sanchez</a> &gt; &gt; &gt;
+    <hr>
+    <ul>
+        <!--Download link-->
+        <li>Download pages <a href="Message-512.webp" download>icon</a></li>
+        <!--Email link. WARNING: NOT USED ANYMORE BECAUSE OF WEB-CRAWLERS-->
+        <li>Contact me <a href="mailto:gso2090@gmail.com">here</a></li>
+        <!--Telehpone call link-->
+        <li>Call me <a href="tel:+50683693617">here</a></li>
+        <!--Links to root of our webpage-->
+        <li><a href="/">Root</a></li>
+    </ul>
+    <hr>
+    <a href="#">Back to top</a><br>
+    <figure>
+        <!--Used to defer the offscreen images.-->
+        <img src="Message-512.webp" alt="Text icon" title="Icon" loading="lazy" width="512px" height="512px">
+        <!--Figure caption-->
+        <figcaption>
+            This is a text icon.
+        </figcaption>
+    </figure>
 </body>
 
 </html>
